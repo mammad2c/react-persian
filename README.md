@@ -1,12 +1,12 @@
 # react-persian
-**react-persian** is a set of react components for Persian localization.
+**react-persian** is a set of react components for Persian localization. it's a fork from official 'react-persian' package by Mohammad Mohebifar
 
 # Installation
 
 You can install this package via `npm`:
 
 ```bash
-npm install react-persian --save
+npm install @thg303/react-persian --save
 ```
 
 # Components
@@ -15,7 +15,7 @@ You can use `PersianNumber` component to convert the digits to Persian form:
 
 ```jsx
 import React from 'react';
-import { PersianNumber } from 'react-persian';
+import { PersianNumber } from '@thg303/react-persian';
 
 class Test extends React.Component {
   render() {
@@ -36,7 +36,7 @@ class Test extends React.Component {
 You
 ```jsx
 import React from 'react';
-import { PersianNumberWords } from 'react-persian';
+import { PersianNumberWords } from '@thg303/react-persian';
 
 class Test extends React.Component {
   render() {
@@ -50,7 +50,7 @@ class Test extends React.Component {
 ### latinToPersian
 You can use `latinToPersian` function to convert the digits to Persian:
 ```jsx
-import { latinToPersian } from 'react-persian';
+import { latinToPersian } from '@thg303/react-persian';
 
 class Test extends React.Component {
   render() {
@@ -61,7 +61,7 @@ class Test extends React.Component {
 ### arabicToPersian
 You can use `arabicToPersian` function to convert the Arabic digits to Persian:
 ```jsx
-import { arabicToPersian } from 'react-persian';
+import { arabicToPersian } from '@thg303/react-persian';
 
 class Test extends React.Component {
   render() {
@@ -69,6 +69,19 @@ class Test extends React.Component {
   }
 }
 ```
+
+### persianToLatin
+You can use `persianToLatin` function to convert the Persian digits to Latin:
+```jsx
+import { persianToLatin } from '@thg303/react-persian';
+
+class Test extends React.Component {
+  render() {
+    return (<button onClick={() => console.log(persianToLatin('۴۴'))}>shows 44</button>)
+  }
+}
+```
+
 ### formatString
 You can use `formatString` function to add commas every 3 characters fron right:
 ```jsx

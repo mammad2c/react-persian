@@ -1,4 +1,4 @@
-import PersianNumber, { latinToPersian, arabicToPersian, formatString, removeCommasFromString } from './PersianNumber.js';
+import PersianNumber, { latinToPersian, arabicToPersian, persianToLatin, formatString, removeCommasFromString } from './PersianNumber.js';
 import PersianNumberWords from './PersianNumberWords.js';
 
 const components = {
@@ -8,6 +8,7 @@ const components = {
   arabicToPersian,
   formatString,
   removeCommasFromString,
+  persianToLatin
 };
 
 export default components;
