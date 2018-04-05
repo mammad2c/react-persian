@@ -1,6 +1,6 @@
 {
   "name": "@thg303/react-persian",
-  "version": "1.3.0",
+  "version": "1.4.0",
   "description": "A set of react components for Persian localisation",
   "main": "lib/index.js",
   "devDependencies": {

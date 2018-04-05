@@ -8,7 +8,12 @@ const arabicNumbers = [/٤/g, /٥/g, /٦/g];
 const persianToLatinMap = ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'];
 const persianNumbers = [/۱/g, /۲/g, /۳/g, /۴/g, /۵/g, /۶/g, /۷/g, /۸/g, /۹/g, /۰/g];
 
+function convertToString(input) {
+  return input + '';
+}
+
 export function latinToPersian(string) {
+  string = convertToString(string);
   let result = string;
 
   for (let index = 0; index < 10; index++) {
@@ -29,6 +34,7 @@ export function persianToLatin(string) {
 }
 
 export function arabicToPersian(string) {
+  string = convertToString(string);
   let result = string;
 
   for (let index = 0; index < 10; index++) {
@@ -50,13 +56,14 @@ export function formatNumber(number, dec = false) {
   }
   return x1 + (dec ? x2 : '');
 }
-
 export function formatString(string, dec = false) {
+  string = convertToString(string);
   const numberString = isNumber(parseInt(string)) && string !== '' ? string : 0;
   return formatNumber(parseInt(numberString), dec) + '';
 }
 
 export function removeCommasFromString(string) {
+  string = convertToString(string);
   return string.split(',').join('');
 }
 

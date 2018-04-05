@@ -1,5 +1,5 @@
 # react-persian
-**react-persian** is a set of react components for Persian localization. it's a fork from official 'react-persian' package by Mohammad Mohebifar
+**@thg303/react-persian** is a fork of **react-persian** - a set of react components for Persian localization.
 
 # Installation
 
@@ -85,7 +85,7 @@ class Test extends React.Component {
 ### formatString
 You can use `formatString` function to add commas every 3 characters fron right:
 ```jsx
-import { formatString } from 'react-persian';
+import { formatString } from '@thg303/react-persian';
 
 class Test extends React.Component {
   render() {
@@ -96,7 +96,7 @@ class Test extends React.Component {
 ### removeCommasFromString
 You can use `formatString` function to remove any commas from string:
 ```jsx
-import { removeCommasFromString } from 'react-persian';
+import { removeCommasFromString } from '@thg303/react-persian';
 
 class Test extends React.Component {
   render() {
